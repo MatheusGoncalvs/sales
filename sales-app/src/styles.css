@@ -1,3 +1,5 @@
+@import '~font-awesome/css/font-awesome.min.css';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--first-color);
 }
 ol, ul {
 	list-style: none;
@@ -48,4 +52,18 @@ table {
 }
 html, body {
 	height: 100%;
+}
+:root {
+	--first-color: #fafafa;
+	--second-color: #333333;
+}
+a, a:hover, a:active {
+	color: var(--first-color);
+	text-decoration: none;
+}
+.container {
+	display: flex;
+	width: 80%;
+	max-width: 1250px;
+	margin: 0 auto;
 }

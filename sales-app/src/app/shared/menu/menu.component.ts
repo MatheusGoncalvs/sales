@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  hasVerticalMenu = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleMobileButton(): void {
+    this.hasVerticalMenu = !this.hasVerticalMenu;
+  }
+
+  none(): void {
+
   }
 
 }

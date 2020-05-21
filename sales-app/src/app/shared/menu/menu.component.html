@@ -1,1 +1,27 @@
-<p>menu works!</p>
+
+<div class="bg-menu">
+    <div class="container header">
+        <div class="brand">
+            <i class="fa fa-barcode"></i>
+        </div>
+        <div class="button-mobile" id="button-mobile" (click)="toggleMobileButton()" 
+            [ngClass]="{ 'button-mobile-active': hasVerticalMenu }">
+        </div>
+        <nav class="navigation" id="navigation" (click)="none()" [ngClass]="{ 'nav': hasVerticalMenu }">
+            <ul class="navigation-list">
+                <li>
+                    <a href="#" class="navigation-list-item">CADASTROS</a>
+                    <i class="fa fa-sort-down arrow-down"></i>
+                </li>
+                <li>
+                    <a href="#" class="navigation-list-item">PEDIDO DE VENDA</a>
+                </li>
+                <li>
+                    <i class="fa fa-user-circle"></i>
+                    <a href="#" class="navigation-list-item"> Matheus Goncalves</a>
+                    <i class="fa fa-sort-down arrow-down"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
