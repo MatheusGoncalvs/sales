@@ -1,0 +1,30 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color: var(--second-color);
+}
+.guia-paginas {
+    margin-top: 2rem;
+}
+.bloco-atalho {
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    max-width: 380px;
+}
+.head-bloco i {
+    font-size: 52px;
+    padding: 3rem 0;
+}
+.footer-bloco {
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    text-align: center;
+}
+a, a:hover, a:active {
+    color: var(--second-color);
+}
