@@ -4,8 +4,6 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { SharedRoutingModule } from './shared-routing.module';
 
-
-
 @NgModule({
   declarations: [
     MenuComponent,
@@ -16,7 +14,9 @@ import { SharedRoutingModule } from './shared-routing.module';
     SharedRoutingModule
   ],
   exports: [
-    CommonModule
+    CommonModule,
+    MenuComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

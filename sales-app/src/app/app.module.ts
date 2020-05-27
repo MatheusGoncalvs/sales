@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { PaginaInicialComponent } from './content/pagina-inicial/pagina-inicial.component';
 import { PedidoVendaModule } from './content/pedido-venda/pedido-venda.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PedidoVendaModule } from './content/pedido-venda/pedido-venda.module';
   imports: [
     BrowserModule,
     PedidoVendaModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   bootstrap: [AppComponent]
 })
