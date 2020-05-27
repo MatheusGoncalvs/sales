@@ -7,6 +7,8 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { PaginaInicialComponent } from './content/pagina-inicial/pagina-inicial.component';
+import { PedidoVendaComponent } from './content/pedido-venda/pedido-venda.component';
+import { MenuPopupComponent } from './shared/menu/menu-popup/menu-popup.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PaginaInicialComponent } from './content/pagina-inicial/pagina-inicial.
     MenuComponent,
     FooterComponent,
     ContentComponent,
-    PaginaInicialComponent
+    PaginaInicialComponent,
+    PedidoVendaComponent,
+    MenuPopupComponent
   ],
   imports: [
     BrowserModule,

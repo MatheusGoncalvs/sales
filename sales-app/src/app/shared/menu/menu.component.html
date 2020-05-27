@@ -9,9 +9,14 @@
         </div>
         <nav class="navigation" id="navigation" (click)="none()" [ngClass]="{ 'nav': hasVerticalMenu }">
             <ul class="navigation-list">
-                <li>
+                <li (mouseenter)="onPopupMouseIn($event)" (mouseleave)="onPopupMouseOut($event)">
                     <a href="#" class="navigation-list-item">CADASTROS</a>
                     <i class="fa fa-sort-down arrow-down"></i>
+                    <ul class="popup-cadastro" *ngIf="mouseInPopup" (mouseleave)="onPopupMouseOut($event)">
+                        <li><a href="#">PRODUTO</a></li>
+                        <li><a href="#">CLIENTE</a></li>
+                        <li><a href="#">VENDEDOR</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#" class="navigation-list-item">PEDIDO DE VENDA</a>

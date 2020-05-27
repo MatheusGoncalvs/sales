@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   hasVerticalMenu = false;
+  mouseInPopup = false;
 
   constructor() { }
 
@@ -18,8 +19,14 @@ export class MenuComponent implements OnInit {
     this.hasVerticalMenu = !this.hasVerticalMenu;
   }
 
-  none(): void {
-
+  onPopupMouseIn() : void {
+      this.mouseInPopup = true;
   }
+
+  onPopupMouseOut() : void {
+      this.mouseInPopup = false;
+  }
+
+  none(): void {}
 
 }
