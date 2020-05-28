@@ -55,6 +55,7 @@ html, body {
 :root {
 	--first-color: #fafafa;
 	--second-color: #333333;
+	--third-color: #05c46b;
 }
 a, a:hover, a:active {
 	color: var(--first-color);
@@ -72,4 +73,33 @@ h1 {
 }
 h2 {
 	font-size: 18px;
+}
+h3 {
+	font-size: 14px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form-item {
+    margin: 5px 0;
+}
+.botao {
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.botao-primario {
+    background-color: var(--third-color);
+}
+.botao-secundario {
+    background-color: var(--second-color);
+}
+.guia-paginas {
+    margin-top: 2rem;
 }

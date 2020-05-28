@@ -1,0 +1,53 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    color: var(--second-color);
+}
+.grupo-quantidade {
+    display: flex;
+    align-items: center;
+}
+.grupo-quantidade i {
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.grupo-quantidade i:first-child {
+    color: var(--third-color);
+}
+.grupo-quantidade input {
+    max-width: 30px;
+}
+.resumo-da-venda {
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-top: 2rem;
+}
+.content-resumo-venda {
+    border-top: solid 1px var(--second-color);
+    padding-bottom: 30px;
+}
+.resumo-da-venda .footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-group .valor-unitario {
+    max-width: 60px;
+}
+.form-venda .linha {
+    display: flex;
+}
+.form-venda .linha .coluna-1 {
+    margin-right: 20px;
+}
+@media screen and (min-width: 825px) {
+    .pedido-venda .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resumo-da-venda {
+        margin-left: 5vw;
+    }
+}

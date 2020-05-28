@@ -1,1 +1,58 @@
-<p>pedido-venda works!</p>
+<section class="pedido-venda">
+    <div class="guia-paginas">
+        <h2>Página Inicial - Pedido de venda</h2>
+    </div>
+    <div class="content">
+        <div class="form-venda">
+            <form>
+                <div class="form-group">
+                    <label for="cliente">Cliente</label>
+                    <input type="text" name="cliente" class="form-item">
+                </div>
+                <div class="form-group">
+                    <label for="cliente">Vendedor</label>
+                    <input type="text" name="vendedor" class="form-item">
+                </div>
+                <div class="form-group">
+                    <label for="cliente">Produto</label>
+                    <input type="text" name="produto" class="form-item">
+                </div>
+                <div class="linha">
+                    <div class="coluna-1">
+                        <div class="form-group">
+                            <label for="cliente">Valor unitário</label>
+                            <input type="text" name="valorUnitario" class="form-item valor-unitario"
+                                placeholder="R$: 0,00">
+                        </div>
+                    </div>
+                    <div class="coluna-2">
+                        <div class="form-group">
+                            <label for="cliente">Quantidade</label>
+                            <div class="grupo-quantidade">
+                                <i class="fa fa-plus-circle"></i>
+                                <input type="text" name="quantidade" class="form-item" placeholder="0">
+                                <i class="fa fa-minus-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao botao-secundario">Incluir produto</button>
+                <button class="botao botao-primario">Finalizar venda</button>
+            </form>
+        </div>
+        <div class="resumo-da-venda">
+            <div class="head">
+                <h2>Resumo da venda</h2>
+            </div>
+            <div class="content-resumo-venda">
+                <h3><strong>Cliente:</strong> Avulso</h3>
+                <h3><strong>Vendedor:</strong> John Doe</h3>
+                <h3><strong>Produto 1</strong> | 20 | R$: 20,00</h3>
+                <h3><strong>Produto 2</strong> | 01 | R$: 1,00</h3>
+            </div>
+            <div class="footer">
+                <h2><strong>Total do pedido:</strong> R$: 21,00</h2>
+            </div>
+        </div>
+    </div>
+</section>
