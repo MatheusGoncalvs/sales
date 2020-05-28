@@ -46,8 +46,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: 80vw;
+        margin-top: 3rem;
     }
     .resumo-da-venda {
-        margin-left: 5vw;
+        margin-left: 10vw;
     }
 }

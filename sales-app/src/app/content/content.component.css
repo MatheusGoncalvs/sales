@@ -1,5 +1,10 @@
 :host {
     display: flex;
     flex-grow: 1;
-    min-height: 100vh;
+    min-height: 90vh;
+}
+@media screen and (min-width: 825px) {
+    :host {
+        min-height: 86vh;
+    }
 }
