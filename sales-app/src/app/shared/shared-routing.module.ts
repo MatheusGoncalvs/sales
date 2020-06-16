@@ -4,6 +4,7 @@ import { PedidoVendaComponent } from '../content/pedido-venda/pedido-venda.compo
 import { ProdutoComponent } from '../content/cadastros/produto/produto.component';
 import { ClienteComponent } from '../content/cadastros/cliente/cliente.component';
 import { VendedorComponent } from '../content/cadastros/vendedor/vendedor.component';
+import { PesquisaProdutoComponent } from '../content/cadastros/produto/pesquisa-produto/pesquisa-produto.component';
 
 const routes: Routes = [
   { path: 'content/pedido-venda/pedido-venda', component: PedidoVendaComponent },

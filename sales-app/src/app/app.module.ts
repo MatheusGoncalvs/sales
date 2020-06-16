@@ -7,6 +7,7 @@ import { ContentComponent } from './content/content.component';
 import { PaginaInicialComponent } from './content/pagina-inicial/pagina-inicial.component';
 import { PedidoVendaModule } from './content/pedido-venda/pedido-venda.module';
 import { SharedModule } from './shared/shared.module';
+import { ProdutoModule } from './content/cadastros/produto/produto.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     PedidoVendaModule,
+    ProdutoModule,
     AppRoutingModule,
     SharedModule
   ],
