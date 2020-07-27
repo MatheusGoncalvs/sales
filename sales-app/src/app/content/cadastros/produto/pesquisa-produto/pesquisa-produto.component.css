@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    color: var(--second-color);
+}
+th {
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-right: 20px;
+}
+td {
+    padding-right: 20px;
+}
+.pesquisa-produto {
+    width: 200px;
+}
+.grupo-pesquisa-produto {
+    float: left;
+}
+.btn-pesquisar {
+    margin-top: 28px;
+    margin-left: 10px;
+}
+form {
+    margin: 30px 0;
+}
